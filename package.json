@@ -4,8 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "devE": "tsx watch ./src/trainingManager/index.ts",
-    "dev": "vite",
+    "devA": "tsx watch ./src/trainingManager/index.ts",
+    "devP": "vite",
+    "dev": "npm run devA & npm run devP",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
